@@ -12,15 +12,22 @@
   <style>
     body {
 
-      background: linear-gradient(to right, #46c7a9, #b175eb);
+background: linear-gradient(to right, #46c7a9, #b175eb);
+      animation: background 5s linear infinite;
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
       height: 100vh;
       margin: 0;
-
-}
+    }
+    @keyframes background {
+      100% {
+        filter: hue-rotate(350deg);
+        
+      }
+      
+    }
     
 
     h1 {
