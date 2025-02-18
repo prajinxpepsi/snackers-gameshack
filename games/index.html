@@ -1,258 +1,294 @@
 <!DOCTYPE html>
+<html lang="en">
 
 <head>
-	<meta name="google-adsense-account" content="ca-pub-1459994917002906">
+    <meta name="google-adsense-account" content="ca-pub-1459994917002906">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unblocked Games</title>
 
-	<title>Unblocked Games</title>
-<h1>Games</h1>
-<h2>A wide selection of unblocked games!</h2>
-	<div class="container">
-		<a href= / style="font-size: 20px; text-decoration: none">go to homepage </a>
-		<br><br>
-		<input type="text" id="search" placeholder="⌕ search" 
-	</div>
-	<br>
-   <style>
-     
-body {background: linear-gradient(to right, #46c7a9, #b175eb);
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      height: 100vh;
-      margin: 0;}
-div.container {
-	text-align: center;
-}
-h1 {color: white; text-align: center; font-family:"Comic Sans MS"; font-size: 60px; }
-    h2 {color: white; text-align: center; font-family:"Comic Sans MS"; font-size: 40px; }
-a {color: white; font-family:"Comic Sans MS"; font-size: 30px;}
-button {
-  background-color: #04AA6D; /* Green */
-  border: dashed;
-  padding: 15px 32px;
-  color: white;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
-}
+    <style>
+        /* Basic body styling */
+        body {
+            background: linear-gradient(to right, #46c7a9, #b175eb);
+            font-family: "Comic Sans MS", sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            color: white;
+        }
+
+        /* Title Styling */
+        h1 {
+            font-size: 60px;
+            text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.6);
+            margin-bottom: 10px;
+        }
+
+        h2 {
+            font-size: 40px;
+            margin-bottom: 20px;
+            text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.4);
+        }
+
+        /* Link and button styling */
+        a {
+            color: white;
+            font-size: 20px;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 10px;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        a:hover {
+            background-color: #45a049;
+            transform: scale(1.05);
+        }
+
+        .container {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        input[type="text"] {
+            padding: 10px;
+            font-size: 16px;
+            border-radius: 8px;
+            border: 2px solid #ccc;
+            width: 300px;
+            margin: 20px 0;
+            transition: border-color 0.3s ease;
+        }
+
+        input[type="text"]:focus {
+            border-color: #04AA6D;
+            outline: none;
+        }
+
+        /* Flexbox container for horizontal layout */
+        .button-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px; /* Space between buttons */
+            margin-top: 20px;
+        }
+
+        /* Button Styles for each game link */
+        .game-button {
+            background-color: #04AA6D;
+            border: none;
+            padding: 15px 32px;
+            color: white;
+            font-size: 16px;
+            text-align: center;
+            border-radius: 8px;
+            width: 250px;
+            height: 70px;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            cursor: pointer;
+            transition: transform 0.3s ease, background-color 0.3s ease;
+        }
+
+        .game-button img {
+            width: 50px;
+            height: 50px;
+            border-radius: 5px;
+        }
+
+        .game-button:hover {
+            background-color: #45a049;
+            transform: scale(1.05);
+        }
+
+        /* Hover effects for the game icons */
+        .game-button img:hover {
+            transform: rotate(10deg);
+        }
+
     </style>
-
-
 </head>
 
 <body>
-  
+
+    <h1>Games</h1>
+    <h2>A wide selection of unblocked games!</h2>
+
+    <div class="container">
+        <a href="/" class="go-home-link">go to homepage</a>
+        <br>
+        <input type="text" id="search" placeholder="⌕ Search for games">
+    </div>
+
+    <!-- Game Buttons (horizontal layout) -->
+    <div class="button-container">
+        <button class="game-button" onclick="window.location.href='1v1lol/index.html';">
+            <img src="1v1lol/1v1lol.jpg" alt="1v1.LOL"> 1v1.LOL
+        </button>
+
+        <button class="game-button" onclick="window.location.href='2048/index.html';">
+            <img src="2048/2048.png" alt="2048"> 2048
+        </button>
+
+        <button class="game-button" onclick="window.location.href='DogeMiner/index.html';">
+            <img src="DogeMiner/img/dogecoin-d.png" alt="Doge Miner"> Doge Miner
+        </button>
+
+        <button class="game-button" onclick="window.location.href='drive-mad/index.html';">
+            <img src="drive-mad/logo.jpg" alt="Drive Mad"> Drive Mad
+        </button>
+
+        <button class="game-button" onclick="window.location.href='flappybird/index.html';">
+            <img src="flappybird/flappyimage.png" alt="Flappy Bird"> Flappy Bird
+        </button>
+
+        <button class="game-button" onclick="window.location.href='slope/index.html';">
+            <img src="slope/slope4.jpeg" alt="Slope"> Slope
+        </button>
+
+        <button class="game-button" onclick="window.location.href='chrome-dino/index.html';">
+            <img src="chrome-dino/icons/icon-128.png" alt="Chrome Dino"> Chrome Dino
+        </button>
+
+        <button class="game-button" onclick="window.location.href='basketball-stars/index.html';">
+            <img src="basketball-stars/assets/images/basketball-stars.png" alt="Basketball Stars"> Basketball Stars
+        </button>
+
+        <button class="game-button" onclick="window.location.href='paperio2/index.html';">
+            <img src="paperio2/images/icon192.png" alt="Paper.io 2"> Paper.io 2
+        </button>
+
+        <button class="game-button" onclick="window.location.href='google-feud/index.html';">
+            <img src="google-feud/splash.png" alt="Google Feud"> Google Feud
+        </button>
+
+        <button class="game-button" onclick="window.location.href='motox3m/index.html';">
+            <img src="motox3m/splash.jpg" alt="Moto X3M"> Moto X3M
+        </button>
+
+        <button class="game-button" onclick="window.location.href='retro-bowl/index.html';">
+            <img src="retro-bowl/img/icon.jpg" alt="Retro Bowl"> Retro Bowl
+        </button>
+
+        <button class="game-button" onclick="window.location.href='drift-boss/index.html';">
+            <img src="drift-boss/media/driftbosslogo.png" alt="Drift Boss"> Drift Boss
+        </button>
+
+        <button class="game-button" onclick="window.location.href='among-us/index.html';">
+            <img src="among-us/red.png" alt="Among Us"> Among Us
+        </button>
+
+        <button class="game-button" onclick="window.location.href='snowbattle/index.html';">
+            <img src="snowbattle/img/logo.png" alt="Snowbattle.io"> Snowbattle.io
+        </button>
+
+        <button class="game-button" onclick="window.location.href='subway-surfers-ny/index.html';">
+            <img src="subway-surfers-ny/NewYorkIcon.png" alt="Subway Surfers: New York"> Subway Surfers: New York
+        </button>
+
+        <button class="game-button" onclick="window.location.href='stickman-hook/index.html';">
+            <img src="stickman-hook/unnamed.jpg" alt="Stickman Hook"> Stickman Hook
+        </button>
+
+        <button class="game-button" onclick="window.location.href='drift-hunters/index.html';">
+            <img src="drift-hunters/drift-hunters.png" alt="Drift Hunters"> Drift Hunters
+        </button>
+
+        <button class="game-button" onclick="window.location.href='shellshockers/index.html';">
+            <img src="shellshockers/img/favicon.png" alt="Shell Shockers"> Shell Shockers
+        </button>
+
+        <button class="game-button" onclick="window.location.href='ducklife2/index.html';">
+            <img src="ducklife2/ducklife2.png" alt="DuckLife 2"> DuckLife 2
+        </button>
+
+        <button class="game-button" onclick="window.location.href='vex6/index.html';">
+            <img src="vex6/assets/images/logo.png" alt="Vex 6"> Vex 6
+        </button>
+
+        <button class="game-button" onclick="window.location.href='impossiblequiz/index.html';">
+            <img src="impossiblequiz/impossiblequiz.png" alt="Impossible Quiz"> Impossible Quiz
+        </button>
+
+        <button class="game-button" onclick="window.location.href='jetpackjoyride/index.html';">
+            <img src="jetpackjoyride/splash.jpg" alt="Jetpack Joyride"> Jetpack Joyride
+        </button>
+
+        <button class="game-button" onclick="window.location.href='infinitecraft/index.html';">
+            <img src="infinitecraft/cover.svg" alt="Infinite Craft"> Infinite Craft
+
+	</button>
+
+	<button class="game-button" onclick="window.location.href='fnaf/index.html';">
+            <img src="fnaf/splash.jpg" alt="FNAF"> FNAF
+
+	</button>
+
+	<button class="game-button" onclick="window.location.href='fnaf-2/index.html';">
+            <img src="fnaf-2/project/splash.webp" alt="FNAF 2"> FNAF 2
+
+	</button>
+
+	<button class="game-button" onclick="window.location.href='fnaf-3/index.html';">
+            <img src="fnaf-3/project/splash.webp" alt="FNAF 3">
+
+	</button>
+
+	<button class="game-button" onclick="window.location.href='fnaf-4/index.html';">
+            <img src="fnaf-4/project/splash.webp" alt="FNAF 4"> FNAF 4
+
+	</button>
+
+	<button class="game-button" onclick="window.location.href='cookieclicker/index.html';">
+            <img src="cookieclicker/img/cookieclickerimg.png" alt="Cookie Clicker"> Cookie Clicker
+
+	</button>
+
+	<button class="game-button" onclick="window.location.href='hexgl/index.html';">
+            <img src="hexgl/favicon.png" alt="HexGL"> HexGL
+
+	</button>
+
+	    <button class="game-button" onclick="window.location.href='backrooms2d/index.html';">
+            <img src="backrooms2d/TemplateData/favicon.ico" alt="Backrooms2D"> Backrooms 2D
+
+	</button>
+
+	<button class="game-button" onclick="window.location.href='baldisbasics/index.html';">
+            <img src="baldisbasics/splash.png" alt="BaldisBasics"> Baldi's Basics
+
+	</button>
+
+	<button class="game-button" onclick="window.location.href='gdlite/index.html';">
+            <img src="gdlite/logo.png" alt="GDLite"> Geometry Dash Lite
+
+	</button>
+
+	<button class="game-button" onclick="window.location.href='learntofly/index.html';">
+            <img src="learntofly/icon.png" alt="Learntofly"> Learn To Fly
+
+	</button>
 
 
 
-<!--  <a href=1v1lol/index.html>1v1.LOL </a> -->
 
-<!--  <img src = "1v1lol/1v1lol.jpg" height="100" width="100"> -->
- <!-- <a href="1v1lol/index.html" class="icon-box">
-            <img src="1v1lol/1v1lol.jpg" alt="1v1.LOL">
-        </a> -->
-
+	    
 	
- <button type="button" onclick="window.location.href='1v1lol/index.html';" align="left">
-	<img src="1v1lol/1v1lol.jpg"
-     	 alt="Button Image" style="width: 50px; height: 50px;">1v1.LOL
-<br>
-	  <button type="button" onclick="window.location.href='2048/index.html';">
-	<img src="2048/2048.png"
-     	 alt="Button Image" style="width: 50px; height: 50px;">2048
 
 
 
-<br>
-	<button type="button" onclick="window.location.href='DogeMiner/index.html';">
-	<img src="DogeMiner/img/dogecoin-d.png"
-     	 alt="Button Image" style="width: 50px; height: 50px;">Doge Miner
-
-<br>
-
-	<button type="button" onclick="window.location.href='drive-mad/index.html';">
-	<img src="drive-mad/logo.jpg"
-     	 alt="Button Image" style="width: 50px; height: 50px;">Drive Mad
-<br>
-	<button type="button" onclick="window.location.href='flappybird/index.html';">
-	<img src="flappybird/flappyimage.png"
-     	 alt="Button Image" style="width: 50px; height: 50px;">Flappy Bird
-
-<br>		
-	<button type="button" onclick="window.location.href='slope/index.html';">
-	<img src="slope/slope4.jpeg"
-     	 alt="Button Image" style="width: 50px; height: 50px;">Slope
-
-<br>
-
-		<button type="button" onclick="window.location.href='chrome-dino/index.html';">
-	<img src="chrome-dino/icons/icon-128.png"
-     	 alt="Button Image" style="width: 50px; height: 50px;">Chrome Dino
-
-<br>
-			<button type="button" onclick="window.location.href='basketball-stars/index.html';">
-	<img src="basketball-stars/assets/images/basketball-stars.png"
-     	 alt="Button Image" style="width: 50px; height: 50px;">Basketball Stars
-<br>
-	<button type="button" onclick="window.location.href='paperio2/index.html';">
-	<img src="paperio2/images/icon192.png"
-     	 alt="Button Image" style="width: 50px; height: 50px;">Paper.io 2
 
 
-<br>
-	<button type="button" onclick="window.location.href='google-feud/index.html';">
-	<img src="google-feud/splash.png"
-     	 alt="Button Image" style="width: 50px; height: 50px;">Google Feud
-
-<br>
-
-	<button type="button" onclick="window.location.href='motox3m/index.html';">
-	<img src="motox3m/splash.jpg"
-     	 alt="Button Image" style="width: 50px; height: 50px;">Moto X3M
-
-<br>
-
-	<button type="button" onclick="window.location.href='retro-bowl/index.html';">
-	<img src="retro-bowl/img/icon.jpg"
-     	 alt="Button Image" style="width: 50px; height: 50px;">Retro Bowl
-
-<br>
-
-		
-	<button type="button" onclick="window.location.href='drift-boss/index.html';">
-	<img src="drift-boss/media/driftbosslogo.png"
-     	 alt="Button Image" style="width: 50px; height: 50px;">Drift Boss
-<br>
-	<button type="button" onclick="window.location.href='among-us/index.html';">
-	<img src="among-us/red.png"
-     	 alt="Button Image" style="width: 50px; height: 50px;">Among Us
-
-<br>
-		
-	<button type="button" onclick="window.location.href='snowbattle/index.html';">
-	<img src="snowbattle/img/logo.png"
-     	 alt="Button Image" style="width: 50px; height: 50px;">Snowbattle.io
-
-<br>
-
-				
-	<button type="button" onclick="window.location.href='subway-surfers-ny/index.html';">
-	<img src="subway-surfers-ny/NewYorkIcon.png"
-     	 alt="Button Image" style="width: 50px; height: 50px;">Subway Surfers: New York
-
-<br>
-
-		
-				
-	<button type="button" onclick="window.location.href='stickman-hook/index.html';">
-	<img src="stickman-hook/unnamed.jpg"
-     	 alt="Button Image" style="width: 50px; height: 50px;">Stickman Hook
-<br>
-		
-				
-	<button type="button" onclick="window.location.href='drift-hunters/index.html';">
-	<img src="drift-hunters/drift-hunters.png"
-     	 alt="Button Image" style="width: 50px; height: 50px;">Drift Hunters
-
-<br>
-
-	<button type="button" onclick="window.location.href='shellshockers/index.html';">
-	<img src="shellshockers/img/favicon.png"
-     	 alt="Button Image" style="width: 50px; height: 50px;">Shell Shockers
-<br>
-	<button type="button" onclick="window.location.href='ducklife2/index.html';">
-	<img src="ducklife2/ducklife2.png"
-     	 alt="Button Image" style="width: 50px; height: 50px;">DuckLife 2
-
-<br>
-	<button type="button" onclick="window.location.href='vex6/index.html';">
-	<img src="vex6/assets/images/logo.png"
-     	 alt="Button Image" style="width: 50px; height: 50px;">Vex 6
 
 
-<br>		
-
-<button type="button" onclick="window.location.href='impossiblequiz/index.html';">
-	<img src="impossiblequiz/impossiblequiz.png"
-     	 alt="Button Image" style="width: 50px; height: 50px;">Impossible Quiz
-<br>
-
-	<button type="button" onclick="window.location.href='jetpackjoyride/index.html';">
-	<img src="jetpackjoyride/splash.jpg"
-     	 alt="Button Image" style="width: 50px; height: 50px;">Jetpack Joyride
-
-<br>
-
-	<button type="button" onclick="window.location.href='infinitecraft/index.html';">
-	<img src="infinitecraft/cover.svg"
-     	 alt="Button Image" style="width: 50px; height: 50px;">Infinite Craft
-
-<br>
-
-	<button type="button" onclick="window.location.href='fnaf/index.html';">
-	<img src="fnaf/splash.jpg"
-     	 alt="Button Image" style="width: 50px; height: 50px;">FNAF
-
-<br>
-
-	<button type="button" onclick="window.location.href='fnaf-2/index.html';">
-	<img src="fnaf-2/project/splash.webp"
-     	 alt="Button Image" style="width: 50px; height: 50px;">FNAF 2
 
 
-<br>
 
-	<button type="button" onclick="window.location.href='fnaf-3/index.html';">
-	<img src="fnaf-3/project/splash.webp"
-     	 alt="Button Image" style="width: 50px; height: 50px;">FNAF 3
-
-<br>
-
-	<button type="button" onclick="window.location.href='fnaf-4/index.html';">
-	<img src="fnaf-4/project/splash.webp"
-     	 alt="Button Image" style="width: 50px; height: 50px;">FNAF 4
-
-
-<br>
-
-	<button type="button" onclick="window.location.href='cookieclicker/index.html';">
-	<img src="cookieclicker/img/cookieclickerimg.png"
-     	 alt="Button Image" style="width: 50px; height: 50px;">Cookie Clicker
-
-<br>
-
-	<button type="button" onclick="window.location.href='hexgl/index.html';">
-	<img src="hexgl/favicon.png"
-     	 alt="Button Image" style="width: 50px; height: 50px;">HexGL
-
-
-<br>
-
-	<button type="button" onclick="window.location.href='backrooms2d/index.html';">
-	<img src="backrooms2d/TemplateData/favicon.ico"
-     	 alt="Button Image" style="width: 50px; height: 50px;">Backrooms 2D
-
-<br>
-
-	<button type="button" onclick="window.location.href='baldisbasics/index.html';">
-	<img src="baldisbasics/splash.png"
-     	 alt="Button Image" style="width: 50px; height: 50px;">Baldi's Basics
-
-
-<br>
-
-	<button type="button" onclick="window.location.href='gdlite/index.html';">
-	<img src="gdlite/logo.png"
-     	 alt="Button Image" style="width: 50px; height: 50px;">Geometry Dash Lite
-
-
-<br>
-
-	<button type="button" onclick="window.location.href='learntofly/index.html';">
-	<img src="learntofly/icon.png"
-     	 alt="Button Image" style="width: 50px; height: 50px;">Learn to Fly
 		
 </body>
