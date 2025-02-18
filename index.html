@@ -10,9 +10,9 @@
   <link rel="icon" type="image/png" href="favicon.png">
   <title>Snacker's Game Shack</title>
   <style>
+    /* Apply a transform to make the body slide down */
     body {
-
-background: linear-gradient(to right, #46c7a9, #b175eb);
+      background: linear-gradient(to right, #46c7a9, #b175eb);
       animation: background 5s linear infinite;
       display: flex;
       flex-direction: column;
@@ -20,20 +20,25 @@ background: linear-gradient(to right, #46c7a9, #b175eb);
       justify-content: center;
       height: 100vh;
       margin: 0;
-
-      
-        }
-
-  
+      transform: translateY(-100%); /* Start off-screen at the top */
+      animation: slideDown 0.5s ease-out forwards, background 5s linear infinite; /* Slide down quickly and background animation */
     }
+
+    /* Animation for sliding the body down */
+    @keyframes slideDown {
+      0% {
+        transform: translateY(-100%); /* Start off-screen above */
+      }
+      100% {
+        transform: translateY(0); /* End at the normal position */
+      }
+    }
+
     @keyframes background {
       100% {
         filter: hue-rotate(350deg);
-        
       }
-      
     }
-    
 
     h1 {
       color: white;
@@ -91,6 +96,7 @@ background: linear-gradient(to right, #46c7a9, #b175eb);
     <a href="settings.html">Settings</a> <!-- Added the new Settings button -->
     <a href="partners.html">Partners</a> <!-- Added the new Partners button -->
   </div>
+
 </body>
 
 </html>
