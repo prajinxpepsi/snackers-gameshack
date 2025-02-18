@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -40,16 +39,30 @@
       }
     }
 
+    /* Styling for main title (h1) */
     h1 {
       color: white;
       font-family: "Comic Sans MS", sans-serif;
       font-size: 100px;
+      transition: transform 0.3s ease; /* Smooth transition on hover */
     }
 
+    /* Hover effect for h1 */
+    h1:hover {
+      transform: scale(1.1); /* Slightly enlarge the text */
+    }
+
+    /* Styling for subheading (h2) */
     h2 {
       color: white;
       font-family: "Comic Sans MS", sans-serif;
       font-size: 30px;
+      transition: transform 0.3s ease; /* Smooth transition on hover */
+    }
+
+    /* Hover effect for h2 */
+    h2:hover {
+      transform: scale(1.1); /* Slightly enlarge the text */
     }
 
     p {
@@ -57,12 +70,14 @@
       font-size: 20px;
     }
 
+    /* Button container styles */
     .button-container {
       display: flex;
       justify-content: center; /* Centers buttons horizontally */
       gap: 20px; /* Adds space between buttons */
     }
 
+    /* Styling for the links (buttons) */
     a {
       font-family: "Comic Sans MS", sans-serif; /* Fallback font */
       font-size: 25px;
