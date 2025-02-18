@@ -112,6 +112,22 @@
             transform: rotate(10deg);
         }
 
+
+	    input[type="search"] {
+            padding: 10px;
+            font-size: 16px;
+            border-radius: 8px;
+            border: 2px solid #ccc;
+            width: 300px;
+            margin: 20px 0;
+            transition: border-color 0.3s ease;
+        }
+
+        input[type="search"]:focus {
+            border-color: #04AA6D;
+            outline: none;
+        }
+
     </style>
 </head>
 
@@ -123,8 +139,14 @@
     <div class="container">
         <a href="/" class="go-home-link">go to homepage</a>
         <br>
-        <input type="text" id="search" placeholder="⌕ Search for games">
+        <input type="search" id="search" placeholder="Search games..." onkeyup="searchGames()">
     </div>
+	<div class="game-cards">
+		<div class="card">
+			<div class = "header"></div>
+			<div class="body">
+	</div>
+	
 
     <!-- Game Buttons (horizontal layout) -->
     <div class="button-container">
@@ -275,6 +297,32 @@
 
 	</button>
 
+    </div>
+
+
+			 <script>
+        function searchGames() {
+            const input = document.getElementById('search');
+            const filter = input.value.toLowerCase(); // Convert search input to lowercase
+            const buttons = document.getElementsByClassName('game-button'); // Get all buttons
+
+            // Loop through all the buttons and filter based on text content
+            for (let i = 0; i < buttons.length; i++) {
+                const gameName = buttons[i].textContent.toLowerCase(); // Get the button's name
+                if (gameName.indexOf(filter) > -1) {
+                    buttons[i].style.display = ""; // Show button
+                } else {
+                    buttons[i].style.display = "none"; // Hide button
+                }
+            }
+        }
+    </script>
+
+		
+</body>
+
+</html>
+
 
 
 
@@ -291,4 +339,4 @@
 
 
 		
-</body>
+
